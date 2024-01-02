@@ -2,6 +2,15 @@
   --light_blue: #add8e6;
 }
 
+@keyframes slideIn {
+  from {
+    margin-top: -280px;
+  }
+  to {
+    margin-top: 250px;
+  }
+}
+
 .btn-primary {
   background-color: black;
   border: none;
@@ -12,7 +21,32 @@ section {
 }
 
 .box {
-  width: 200px;
   height: 150px;
   border: 2px solid black;
+}
+
+.list--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.dropdown-menu-custom {
+  background-color: lightcoral;
+  padding: 20px 80px;
+  border-radius: 25px;
+  transition: 300ms;
+  margin-top: -280px;
+  position: absolute;
+}
+
+.no-margin {
+  margin-top: 300px;
+}
+
+.no-display {
+  display: none;
 }
