@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Bootstrap Demo</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -10,7 +11,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Bootstrap Demo</title>
+
+    <!-- jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
   </head>
   <body>
     <div class="list--container">
@@ -55,13 +59,21 @@
     </div>
 
     <section class="container">
-      <div class="row gx-4">
+      <div class="row gap-4">
         <div class="box col-lg-6">1</div>
         <div class="box col-lg-2">2</div>
         <div class="box col-lg-2">3</div>
         <div class="box col-lg-2">4</div>
       </div>
     </section>
+
+    <!-- practice section -->
+    <div class="layout--container row rounded-3">
+      <div class="col-12 col-md-6 col-lg-7 rounded-3">left
+        <button id="hide-btn" style="display: block;" >hide me</button>
+      </div>
+      <div id="right-div" class="col-12 col-md-6 col-lg-5 rounded-3">right</div>
+    </div>
 
     <!-- bootstrap cdn -->
     <script

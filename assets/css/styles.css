@@ -2,6 +2,12 @@
   --light_blue: #add8e6;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @keyframes slideIn {
   from {
     margin-top: -280px;
@@ -49,4 +55,24 @@ section {
 
 .no-display {
   display: none;
+}
+
+.layout--container{
+  max-width: 82.5rem;
+  margin: 20px auto;
+  border: 2px solid gold;
+  min-height: 60vh;
+  padding: 15px;
+}
+
+
+
+
+.layout--container div:nth-child(1){
+  border: 2px solid red;
+  position: relative;
+}
+.layout--container div:nth-child(2){
+  border: 2px solid greenyellow;
+  position: relative;
 }

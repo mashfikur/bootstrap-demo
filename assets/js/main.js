@@ -10,3 +10,9 @@ btn.addEventListener("click", () => {
     menu.classList.remove("no-margin");
   }
 });
+
+$(document).ready(function () {
+  $("#hide-btn").click(function () {
+    $("#right-div").hide();
+  });
+});
