@@ -100,3 +100,21 @@ main {
 #main--text {
   transition: 0.5s;
 }
+
+#smooth--wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#smooth--content {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.box--new {
+  width: 250px;
+  height: 250px;
+  border: 2px solid;
+}

@@ -12,7 +12,6 @@ btn.addEventListener("click", () => {
   }
 });
 
-
 // toggle functionality
 
 $(document).ready(function () {
@@ -25,9 +24,18 @@ $(document).ready(function () {
   });
 });
 
-
 // animating text
 
-const mainText = new SpltType("#main--text")
+const mainText = new SpltType("#main--text");
 
-gsap.to('#main--text')
+gsap.from("#main--text", {
+  scale: 1.5,
+  duration: 0.4,
+});
+
+Gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+let smoother = ScrollSmoother.create({
+  wrapper: "#smooth--wrapper",
+  content: "#smooth--content",
+});
