@@ -24,3 +24,10 @@ $(document).ready(function () {
     }
   });
 });
+
+
+// animating text
+
+const mainText = new SpltType("#main--text")
+
+gsap.to('#main--text')
